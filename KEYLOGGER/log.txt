@@ -1,0 +1,27 @@
+
+
+7º - 
+
+![]()Qual ´e mais utilizado o    , o vim ou o VS    vscode?
+Quando ser´a o pr´oximo jogo do Corinthians?
+Lembretes para a pr´oxima semana? : Verificand  o se o Keylogger deu certoz Ao digitor  ar test  xtos aleat´orios em navegadores e aplicativos diferentes, conseguimos visualizar que o ataque deu certo, que o arquivo log.txt foi criado auti omaticamente no VS Code e que tudo que estou difitando         gitando est´a sendo salvo neste arquivo.
+
+9 - comando keylogger10 - text    digitaç~ao capturada pelo keyloggercapturado e  instantaneamenteexiste vida ap´os a morte?
+
+
+7º - Ro  Rodando o k Keylogger sem abrir o terminalquando ´e a black friday no Brasil?
+Tornando o Keylogger invis´ivel para o usu´ario
+
+Ao alterarmos o final       o a extens~ao do nossa arquivo .py para pyw   .pyw conseguimos   deixar o Keylogger invis´ivel para o usu´ario. No Windows os arquivos pyw s~ao scrips ts pthon q      ython que rodam em segundo plano  , sem abrir o terminal, ´e uma funcionalidade nativa do windows.Python .
+
+Comando no   : 
+
+Para alterarmos, basta rodarmos o comando abaixo no terminal shell do VS Code, d na  com a          dentro da pasta onde est´a o Keylogger.ren .\keylogger.py .\keylogger.pyw
+
+  s,  Pe no  W    
+ [ESC]  silenciosamente e monitorando tudo que digitamos. 12 - roando      dando keylogger novamenteo rrodar´a silc enciosamenteir´a capturar tudo o que digitarmosagir´pa   ´a e salvar´a no arquivo log.txt
+
+Comando: z
+Quando ser´a a Black Fi riday no Brasil?
+Quanl ´   is s~ao as principais diferenças entre VIM e VS Code?
+ Coisas que preciso fazer com urg^encia: 
