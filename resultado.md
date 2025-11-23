@@ -1,5 +1,8 @@
 ## RANSOMWARE
-## Executando o script de Ransonware
+
+Ransomware é um tipo de malware que sequestra dados de um computador ou rede, geralmente por meio de criptografia, e exige um resgate para devolvê-los, exigindo pagamento em criptomoedas como o Bitcoin. Os ataques são disseminados principalmente por meio de phishing (e-mails ou sites falsos), links maliciosos e downloads de fontes não confiáveis.
+
+## Executando o script de Ransomware
 
 ### 1º - Altere o tipo de Terminal para o PowerShell no VS Code
 
@@ -7,7 +10,7 @@
 
 &nbsp;
 
-2º - Instale a biblioteca Fernet através do Terminal do VS Code para poder executar o Ransomware e criptografar os arquivos
+### 2º - Instale a biblioteca Fernet através do Terminal do VS Code para poder executar o Ransomware e criptografar os arquivos
 
 O Fernet é uma biblioteca de criptografia autenticada simétrica para Python. Simétrica porque usa a mesma chave para criptografar e descriptografar, simplificando o processo para o usuário. 
 
@@ -15,8 +18,9 @@ Comando: python -m pip install cryptography
 
 ![fernet](https://i.imgur.com/RmOhAbz.jpeg)
 
+&nbsp;
 
-3º - Abra o Terminal do VS Code e digite o comando abaixo:
+### 3º - Abra o Terminal do VS Code e digite o comando abaixo:
 
 Comando: python .\nomedoarquivo.py
 
@@ -24,8 +28,9 @@ Comando: python .\nomedoarquivo.py
 
 Pronto! Os arquivos estarão criptografados. 
 
+&nbsp;
 
-4º - Descriptografando os arquivos
+### 4º - Descriptografando os arquivos
 
 Criar um novo arquivo na pasta MALWARE do VS Code que vamos chamar de descriptografar.py, inserir nele o código ransomware e rodar o código no terminal através do comando abaixo
 
@@ -33,41 +38,51 @@ Comando: python .\descriptografar.py
 
 ![antes](https://i.imgur.com/Wn7dVAJ.jpeg)
 
+&nbsp;
+
 ![depois](https://i.imgur.com/3QK3ogv.jpeg)
 
+&nbsp;
 
-KEYLOGGER
+## KEYLOGGER
 
 Um keylogger é um tipo de malware que registra secretamente todos os toques de teclado de um usuário, permitindo que um invasor roube informações confidenciais como senhas, números de cartão de crédito e dados pessoais. Eles podem ser baseados em software (mais comuns, instalados via malware) ou em hardware (dispositivos físicos). Os principais objetivos são espionar e roubar dados, mas os keyloggers também podem ser usados para outros fins, como monitoramento de funcionários ou para recuperar o histórico de digitação.
 
-
-5º - Abrindo uma nova pasta chamada Keylogger no VS Code e instalando a biblioteca pynput com o comando abaixo.
+### 5º - Abrindo uma nova pasta chamada Keylogger no VS Code e instalando a biblioteca pynput com o comando abaixo.
 
 Comando: python -m pip install pynput
 
-![]()
+![pynput](https://i.imgur.com/6cRt83B.jpeg)
 
 O pip é um gerenciador de pacotes do Python que nos permite instalar novas bibliotecas e funcionalidades dentro da instalação padrão do Python no computador.
 
 O pynput é uma biblioteca Python que pode ser usada dentro do VS Code para controlar e monitorar o teclado e o mouse.
 
+&nbsp;
 
-6º - Criando o código do Keylogger
+### 6º - Criando o código do Keylogger
 
 1 - Crie o arquivo keylogger.py dentro da pasta KEYLOGGER no VS Code.
+
 2 - Dentro desse arquivo importe o keyboard da biblioteca pynput
+
 3 - Escreva o código
+
 4 - Rode o comando abaixo no terminal shell do VS Code para confirmar se deu certo:
 
 Comando: python .\keylogger.py
 
-![]()
+![keylogger](https://i.imgur.com/yknPjRD.jpeg)
+
+&nbsp;
 
 Ao digitar textos aleatórios em navegadores e aplicativos diferentes, conseguimos visualizar que o ataque deu certo, que o arquivo log.txt foi criado automaticamente no VS Code e que tudo que estou digitando está sendo capturado e salvo instantaneamente neste arquivo.
 
-![]()
+![capturada](https://i.imgur.com/euzjrVx.jpeg)
 
-7º - Tornando o Keylogger invisível para o usuário
+&nbsp;
+
+### 7º - Tornando o Keylogger invisível para o usuário
 
 Ao alterarmos a extensão do nossa arquivo .py para .pyw conseguimos deixar o Keylogger invisível para o usuário. No Windows, os arquivos .pyw são scripts Python que rodam em segundo plano, sem abrir o terminal, e é uma funcionalidade nativa do Python no Windows.
 
@@ -75,17 +90,26 @@ Para alterarmos, basta rodarmos o comando abaixo no terminal shell do VS Code de
 
 Comando: ren .\keylogger.py .\keylogger.pyw 
 
-![]()
+![pyw](https://i.imgur.com/G2lV9Xx.jpeg)
+
+&nbsp;
 
 Na sequência devemos rodar o script novamente. Ele agirá silenciosamente e irá capturar tudo o que digitarmos e salvará no arquivo log.txt. É assim que os ataques acontecem na prática. 
 
-Comando: 
+Comando: python .\keylogger.pyw
 
-![]()
+![](https://i.imgur.com/wCZi6PO.jpeg)
 
-8º - Enviando remotamente os dados capturados para o atacante
+&nbsp;
+
+![log](https://i.imgur.com/ugEElV0.jpeg)
+
+&nbsp;
+
+### 8º - Enviando remotamente os dados capturados para o atacante
 
 1 - Criar um gmail apenas para testes como esse
+
 2 - Ativar a verificação em duas etapas e criar uma senha de app exlusiva nesse gmail para o aplicativo python para ser inserida em nosso código malicioso. É uma senha exclusiva para envio de e-mails via aplicativo. Essa é uma etapa comum em malwares reais para exportação dos dados para outro lugar sem chamar a atenção da vítima.
 
 Como usar a senha exclusiva de app?
@@ -102,12 +126,15 @@ Comando: python -m pip install secure-smtplib
 
 Comando: python .\keylogger_email.py
 
-![]()
+![email](https://i.imgur.com/uLfU5xG.jpeg)
 
-![]()
+&nbsp;
 
+![email1](https://i.imgur.com/35kfwEf.jpeg)
 
-Detectando e prevenindo ameaças
+&nbsp;
+
+## Detectando e prevenindo ameaças
 
 Para detectar e prevenir ameaças de malware como keyloggers e ransomware, é crucial adotar uma abordagem de segurança em várias camadas. Nenhuma ferramenta ou método único oferece proteção total, mas a combinação de práticas recomendadas e ferramentas de segurança pode reduzir significativamente o risco. Alguns métodos que podem ser adotados são: 
 
