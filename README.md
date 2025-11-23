@@ -6,4 +6,4 @@
 
 - Quase todas as funções dos códigos possuem comentários explicando o objetivo de cada função no ataque.
 
-- Na pasta resultado contém prints, comandos e algumas explicações dos ataques na sequência, além de 15 sugestões de ações para detecção e prevenção de ameaças. 
+- No arquivo resultado contém prints, comandos e algumas explicações dos ataques na sequência, além de 15 sugestões de ações para detecção e prevenção de ameaças. 
